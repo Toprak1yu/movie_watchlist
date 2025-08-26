@@ -1,0 +1,187 @@
+html ,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+    justify-content: space-around;
+    background-image: url("/images/hero.png");
+    padding: 4em 0 6em 0;
+    background-position: 0 20%;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    pointer-events: none;
+    z-index: 1;
+}
+
+header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.disabled {
+    display: none;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.searchbar {  
+  position: absolute;
+  bottom: -34px;
+  display: flex;
+  width: 60%;   
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.searchbar input {
+  flex: 1;
+  padding: 1em;
+  border: none;
+  outline: none; 
+  font-size: 1.4rem; 
+}
+
+.searchbar button {
+  padding: 0 5em;
+  border: none;
+  border-left: 1px solid #ccc; 
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.searchbar button:hover {
+  background: #e8e8e8;
+}
+
+.search-logo {
+    padding: 1.1em 2em 1em 2em;
+    background-color: #FFFFFF;
+}
+
+.first-text {
+    margin-top: 11em;
+    text-align: center;
+}
+
+.first-text p {
+    margin-top: 0.3em;
+    color: #DFDDDD;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#film-container {
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 1em;
+}
+
+.film {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.film img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.film h2 {
+    width: 350px;
+}
+
+.film p {
+    font-size: 1.3rem;
+    width: 300px;          
+    line-height: 1.2; 
+}
+
+.film button {
+    background-image: url("/images/add_icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.2s ease;
+}
+
+.film button:hover {
+    transform: scale(1.2);
+}
+
+.film span {
+    font-size: 1.2rem;
+}
+
+.not-found {
+    color: #DFDDDD;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+#remove-from-watchlist {
+    background-image: url("/images/remove_icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.2s ease;
+}
+
+#remove-from-watchlist:hover {
+    transform: scale(1.2);
+}
