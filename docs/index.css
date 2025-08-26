@@ -216,7 +216,7 @@ a:hover {
     .searchbar button {
         padding: 0.5em 1em;
         width: auto;
-        min-width: 90px;
+        min-width: 110px;
         color: #222;
         background: #f8f8f8;
         font-size: 1rem;
