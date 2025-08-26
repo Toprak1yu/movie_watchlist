@@ -6,7 +6,7 @@ const filmContainer = document.getElementById("film-container")
 const firstText = document.getElementById("first-look")
 
 document.querySelector("button").addEventListener("click", async () => {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${movieName.value}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${movieName.value}`);
     const data = await response.json();
     filmContainer.innerHTML = "";
     firstText.classList.add("disabled");
@@ -22,7 +22,7 @@ document.querySelector("button").addEventListener("click", async () => {
             document.querySelectorAll(".not-found").forEach(el => el.remove());
             const filmElement = document.createElement("div");
             filmElement.classList.add("film");
-            const detailedInfo = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${film.imdbID}`);
+            const detailedInfo = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${film.imdbID}`);
             const detailedData = await detailedInfo.json();
             filmElement.innerHTML = `
                 <img src="${film.Poster}" alt="${film.Title}" />
