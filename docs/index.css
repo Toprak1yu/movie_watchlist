@@ -209,10 +209,11 @@ a:hover {
     .searchbar {
         width: 80%;
         bottom: -32px;
+        box-sizing: border-box;
     }
     .searchbar input {
         max-width: 200px;
-        border: transparent;
+        box-sizing: border-box;
     }
     .searchbar button {
         padding: 0.5em 1em;
@@ -222,6 +223,7 @@ a:hover {
         background: #f8f8f8;
         font-size: 1rem;
         text-align: center;
+        box-sizing: border-box;
     }
     .first-text {
         margin-top: 10em;
