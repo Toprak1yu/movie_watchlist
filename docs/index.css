@@ -200,11 +200,11 @@ a:hover {
         background-position: 0 40%;
     }
     h1 {
-        font-size: 4rem;
-        margin-left: 6px;
+        font-size: 3rem;
+        margin-left: 1em;
     }
     a {
-        margin-right: 6px;
+        margin-right: 0.5em;
     }
     .searchbar {
         width: 80%;
@@ -212,18 +212,25 @@ a:hover {
     }
     .searchbar input {
         max-width: 200px;
+        border: transparent;
     }
     .searchbar button {
-        text-align: start;
+        padding: 0.5em 1em;
+        width: auto;
+        min-width: 70px;
+        color: #222;
+        background: #f8f8f8;
+        font-size: 1rem;
+        text-align: center;
     }
     .first-text {
-        margin-top: 8em;
+        margin-top: 10em;
     }
     .first-text p {
         font-size: 1.4rem;
     }
     .not-found {
-        margin-top: 8em;
+        margin-top: 6em;
     }
     #film-container {
         grid-template-columns: 1fr;
