@@ -1,6 +1,6 @@
 # Movie Watchlist
 
-A simple web app to search for movies and manage your personal watchlist using the OMDb API.
+🎞️ A simple web app to search for movies and manage your personal watchlist using the OMDb API.
 
 ## Features
 - Search for movies by name
