@@ -189,3 +189,45 @@ a:hover {
 #remove-from-watchlist:hover {
     transform: scale(1.2);
 }
+
+@media (max-width: 480px) {
+    html {
+        zoom: 0.7;
+    }
+    header {
+        height: 150px;
+        padding: 2em 0 4em 0;
+        background-position: 0 40%;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .searchbar {
+        width: 80%;
+        bottom: -28px;
+    }
+    .first-text {
+        margin-top: 8em;
+    }
+    .first-text p {
+        font-size: 1.4rem;
+    }
+    #film-container {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 0 1em;
+    }
+    .film img {
+        width: 200px;
+        height: 300px;
+    }
+    .film h2 {
+        width: 220px;
+        font-size: 1.4rem;
+    }
+    .film p {
+        font-size: 1rem;
+        width: 200px;          
+        line-height: 1.2; 
+    }
+}
